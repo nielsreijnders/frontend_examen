@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Brandon reg";
+  font-weight: normal;
+  src: url("Brandon_reg.woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brandon blk";
+  font-weight: normal;
+  src: url("Brandon_blk.woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brandon med it";
+  font-weight: normal;
+  src: url("Brandon_med_it.woff");
+  font-display: swap;
+}

@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "name": "troost",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "copy_manifest": "cp manifest.json build/manifest.json && cp assets/icon.png build/icon.png && cp assets/screen.jpg build/screen.jpg",
+    "build": "preact build --no-prerender && npm run copy_manifest",
+    "serve": "sirv build --port 8080 --cors --single",
+    "dev": "preact watch",
+    "lint": "eslint src"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "eslintIgnore": [
+    "build/*"
+  ],
+  "devDependencies": {
+    "@quickbaseoss/babel-plugin-styled-components-css-namespace": "^1.0.1",
+    "babel-plugin-styled-components": "^1.12.0",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-synacor": "^3.0.4",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "preact-cli": "^3.0.0",
+    "sirv-cli": "^1.0.3"
+  },
+  "dependencies": {
+    "gsap": "^3.5.1",
+    "html-react-parser": "^0.14.2",
+    "koekie": "^1.1.2",
+    "preact": "^10.1.0",
+    "preact-render-to-string": "^5.1.2",
+    "preact-router": "^3.2.1",
+    "styled-components": "^5.2.1"
+  }
+}
